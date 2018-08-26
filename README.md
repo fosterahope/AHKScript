@@ -1,0 +1,2 @@
+# AHKScript
+AutoHotKey Script
