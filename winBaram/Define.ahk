@@ -31,3 +31,19 @@ global W_CHAR_X := 0x58 ;'x' 88
 ;///////////////////////////////////////////
 global L_CHAR_X := 0x2D0001 ;'x' 2949121	
 
+
+GetWParam(_char)
+{
+	if( _char = x)
+		return %W_CHAR_X%
+
+	return %_char%
+}
+
+GetLParam(_char)
+{
+	if ( _char = x)
+		return %L_CHAR_X%
+	
+	return _char
+}

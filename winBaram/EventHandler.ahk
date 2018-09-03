@@ -10,10 +10,12 @@ UpdateUi()
 	if(g_bMacroStart == true)
 	{
 		SB_SetText("매크로 수행 중", 1)
+		GuiControl, Text, BtnChange, 정지
 	}
 	else
 	{
 		SB_SetText("대기중", 1)
+		GuiControl, Text, BtnChange, 시작
 	}
 	
 	return
@@ -29,6 +31,9 @@ OnButtonStartPause()
 	g_bMacroStart := !g_bMacroStart
 	
 	UpdateUi()
+	
+	; Macro Function
+	
 	return 
 }
 
