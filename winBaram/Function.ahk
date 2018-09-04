@@ -42,12 +42,9 @@ MainLoop()
 	if(chkTmp == 0) ; 비활성화
 		return	
 	
-	MsgBox, % "키입니다 : " . GetWParam(editTmp)
-	MsgBox, % "키입니다 : " . GetLParam(editTmp)
-	
 	Sleep, 1500
 	
-	; PostMessage,, WM_KEYDOWN, GetWParam(editTmp), GetLParam(editTmp), , 바람의나라
+	; PostMessage,, WM_KEYDOWN, GetKeyVK(editTmp), GetKeyInfo(editTmp), , 바람의나라
 	
 	return
 }
