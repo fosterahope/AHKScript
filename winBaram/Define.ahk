@@ -53,79 +53,77 @@ GetKeyInfo(_char)
 		return 0x0a0001
 	else if( _char = 0)
 		return 0x0b0001
-	else if( _char = a || _char = A)
+	else if( _char = "a" or _char = "A")
 		return 0x1e0001
-	else if( _char = b || _char = B)
+	else if( _char = "b" or _char = "B")
 		return 0x300001
-	else if( _char = c || _char = C)
+	else if( _char = "c" or _char = "C")
 		return 0x2e0001
-	else if( _char = d || _char = D)
+	else if( _char = "d" or _char = "D")
 		return 0x200001
-	else if( _char = e || _char = E)
+	else if( _char = "e" or _char = "E")
 		return 0x120001
-	else if( _char = f || _char = F)
+	else if( _char = "f" or _char = "F")
 		return 0x210001
-	else if( _char = g || _char = G)
+	else if( _char = "g" or _char = "G")
 		return 0x220001
-	else if( _char = h || _char = H)
+	else if( _char = "h" or _char = "H")
 		return 0x230001
-	else if( _char = i || _char = I)
+	else if( _char = "i" or _char = "I")
 		return 0x170001
-	else if( _char = j || _char = J)
+	else if( _char = "j" or _char = "J")
 		return 0x240001
-	else if( _char = k || _char = K)
+	else if( _char = "k" or _char = "K")
 		return 0x250001
-	else if( _char = l || _char = L)
+	else if( _char = "l" or _char = "L")
 		return 0x260001		
-	else if( _char = m || _char = M)
+	else if( _char = "m" or _char = "M")
 		return 0x320001
-	else if( _char = n || _char = N)
+	else if( _char = "n" or _char = "N")
 		return 0x310001
-	else if( _char = o || _char = O)
+	else if( _char = "o" or _char = "O")
 		return 0x180001
-	else if( _char = p || _char = P)
+	else if( _char = "p" or _char = "P")
 		return 0x190001
-	else if( _char = q || _char = Q)
+	else if( _char = "q" or _char = "Q")
 		return 0x100001
-	else if( _char = r || _char = R)
+	else if( _char = "r" or _char = "R")
 		return 0x130001
-	else if( _char = s || _char = S)
+	else if( _char = "s" or _char = "S")
 		return 0x1f0001
-	else if( _char = t || _char = T)
+	else if( _char = "t" or _char = "T")
 		return 0x140001
-	else if( _char = u || _char = U)
+	else if( _char = "u" or _char = "U")
 		return 0x160001
-	else if( _char = v || _char = V)
+	else if( _char = "v" or _char = "V")
 		return 0x2f0001
-	else if( _char = w || _char = W)
+	else if( _char = "w" or _char = "W")
 		return 0x110001
-	else if( _char = x || _char = X)
+	else if( _char = "x" or _char = "X")
 		return 0x2d0001
-	else if( _char = y || _char = Y)
+	else if( _char = "y" or _char = "Y")
 		return 0x150001
-	else if( _char = z || _char = Z)
+	else if( _char = "z" or _char = "Z")
 		return 0x2c0001
-	else if( _char = `)
+	else if( _char = "``")
 		return 0x290001
-	else if( _char = -)
+	else if( _char = "`-")
 		return 0x0c0001
-	else if( _char = =)
+	else if( _char = "`=")
 		return 0x0d0001
-	;else if( _char = [)
-	;	return 0x1a0001
-	;else if( _char = ])
-	;	return 0x1b0001
-	;else if( _char = [)
-	;	return 0x1a0001
-	;else if( _char = ;)
-	;	return 0x270001
-	;else if( _char = ')
-	;	return 0x280001
-	else if( _char = ,)
+	else if( _char = "`]")
+		return 0x1b0001
+	else if( _char = "`[")
+		return 0x1a0001
+	else if( _char = "`;")
+		return 0x270001
+	else if( _char = "`'")
+		return 0x280001
+	else if( _char = "`,")
 		return 0x330001	
-	else if( _char = .)
+	else if( _char = "`.")
 		return 0x340001	
-	else if( _char = /)
+	else if( _char = "`/")
 		return 0x350001	
 		
 	return

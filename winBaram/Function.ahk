@@ -9,7 +9,10 @@
 RunInit()
 {
 	SetTimer, MainLoop, -1
-	SetTimer, 공력증강, 1000
+	SetTimer, 공력증강, 1000		; 1초마다 공력증강을 수행한다.
+
+	; Example
+	; MsgBox, % Format("Origin :`{}`, LPARAM `{:X}`, VK`{:X}`", editTmp, GetKeyInfo(editTmp), GetKeyVK(editTmp))
 	
 	return
 }
@@ -37,14 +40,13 @@ MainLoop()
 	if(g_bMacroStart == false)
 		return
 			
-	GuiControlGet, chkTmp, ,C공력증강
-	GuiControlGet, editTmp, , E공력증강
-	if(chkTmp == 0) ; 비활성화
+	GuiControlGet, chkVal, ,C공력증강
+	GuiControlGet, editVal, , E공력증강
+	if(chkVal == 0) ; 비활성화
 		return	
-	
-	Sleep, 1500
-	
-	; PostMessage,, WM_KEYDOWN, GetKeyVK(editTmp), GetKeyInfo(editTmp), , 바람의나라
+
+	PostMessage, WM_KEYDOWN, GetKeyVK(editVal), GetKeyInfo(editVal), , 제목 없음 - 메모장 ; 바람의나라
+	;PostMessage, WM_KEYUP, GetKeyVK(editVal), GetKeyInfo(editVal), , 바람의나라
 	
 	return
 }
